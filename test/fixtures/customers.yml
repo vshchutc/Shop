@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  idcode: 1
+  description: MyText
+  total_purchase: 1.5
+  discount: 1
+
+two:
+  name: MyString
+  idcode: 1
+  description: MyText
+  total_purchase: 1.5
+  discount: 1

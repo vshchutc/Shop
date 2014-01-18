@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: 
+  description: MyText
+  start_date: 
+  liquidation: 2014-01-18
+
+two:
+  title: 
+  description: MyText
+  start_date: 
+  liquidation: 2014-01-18

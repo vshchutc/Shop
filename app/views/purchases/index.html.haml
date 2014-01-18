@@ -1,0 +1,33 @@
+%h1 Listing purchases
+
+%table
+  %tr
+    %th Monger
+    %th Monger
+    %th Goods title
+    %th Goods
+    %th Customer name
+    %th Operation date
+    %th Price
+    %th Total sum
+    %th
+    %th
+    %th
+
+  - @purchases.each do |purchase|
+    %tr
+      %td= purchase.monger
+      %td= purchase.monger_id
+      %td= purchase.goods_title
+      %td= purchase.goods_id
+      %td= purchase.customer_name
+      %td= purchase.operation_date
+      %td= purchase.price
+      %td= purchase.total_sum
+      %td= link_to 'Show', purchase
+      %td= link_to 'Edit', edit_purchase_path(purchase)
+      %td= link_to 'Destroy', purchase, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Purchase', new_purchase_path

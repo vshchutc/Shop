@@ -1,0 +1,37 @@
+<h1>Listing goods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Code</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Sizes</th>
+      <th>Manufacturer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @goods.each do |good| %>
+      <tr>
+        <td><%= good.title %></td>
+        <td><%= good.code %></td>
+        <td><%= good.price %></td>
+        <td><%= good.description %></td>
+        <td><%= good.sizes %></td>
+        <td><%= good.manufacturer %></td>
+        <td><%= link_to 'Show', good %></td>
+        <td><%= link_to 'Edit', edit_good_path(good) %></td>
+        <td><%= link_to 'Destroy', good, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Good', new_good_path %>

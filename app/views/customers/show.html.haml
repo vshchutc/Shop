@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @customer.name
+%p
+  %b Idcode:
+  = @customer.idcode
+%p
+  %b Description:
+  = @customer.description
+%p
+  %b Total purchase:
+  = @customer.total_purchase
+%p
+  %b Discount:
+  = @customer.discount
+
+= link_to 'Edit', edit_customer_path(@customer)
+\|
+= link_to 'Back', customers_path

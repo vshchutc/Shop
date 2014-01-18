@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
-
+gem 'rails', '4.0.0'
+gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'haml-rails'
+gem 'devise'
+gem 'devise_invitable'
+gem 'geocoder'
+gem 'bootstrap-datepicker-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 

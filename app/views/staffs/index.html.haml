@@ -1,0 +1,33 @@
+%h1 Listing staffs
+
+%table
+  %tr
+    %th Name
+    %th Idcode
+    %th Position
+    %th Birth date
+    %th Information
+    %th Employement date
+    %th General access
+    %th Financial access
+    %th
+    %th
+    %th
+
+  - @staffs.each do |staff|
+    %tr
+      %td= staff.name
+      %td= staff.idcode
+      %td= staff.position
+      %td= staff.birth_date
+      %td= staff.information
+      %td= staff.employement_date
+      %td= staff.general_access
+      %td= staff.financial_access
+      %td= link_to 'Show', staff
+      %td= link_to 'Edit', edit_staff_path(staff)
+      %td= link_to 'Destroy', staff, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Staff', new_staff_path

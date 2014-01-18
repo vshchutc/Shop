@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Monger:
+  = @purchase.monger
+%p
+  %b Monger:
+  = @purchase.monger_id
+%p
+  %b Goods title:
+  = @purchase.goods_title
+%p
+  %b Goods:
+  = @purchase.goods_id
+%p
+  %b Customer name:
+  = @purchase.customer_name
+%p
+  %b Operation date:
+  = @purchase.operation_date
+%p
+  %b Price:
+  = @purchase.price
+%p
+  %b Total sum:
+  = @purchase.total_sum
+
+= link_to 'Edit', edit_purchase_path(@purchase)
+\|
+= link_to 'Back', purchases_path

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  monger: MyString
+  monger_id: 1
+  goods_title: MyString
+  goods_id: 1
+  customer_name: MyString
+  operation_date: 2014-01-18
+  price: 1.5
+  total_sum: 1.5
+
+two:
+  monger: MyString
+  monger_id: 1
+  goods_title: MyString
+  goods_id: 1
+  customer_name: MyString
+  operation_date: 2014-01-18
+  price: 1.5
+  total_sum: 1.5

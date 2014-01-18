@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  idcode: 1
+  position: MyString
+  birth_date: 2014-01-18
+  information: MyText
+  employement_date: 2014-01-18
+  general_access: false
+  financial_access: false
+
+two:
+  name: MyString
+  idcode: 1
+  position: MyString
+  birth_date: 2014-01-18
+  information: MyText
+  employement_date: 2014-01-18
+  general_access: false
+  financial_access: false

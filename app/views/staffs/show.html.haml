@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @staff.name
+%p
+  %b Idcode:
+  = @staff.idcode
+%p
+  %b Position:
+  = @staff.position
+%p
+  %b Birth date:
+  = @staff.birth_date
+%p
+  %b Information:
+  = @staff.information
+%p
+  %b Employement date:
+  = @staff.employement_date
+%p
+  %b General access:
+  = @staff.general_access
+%p
+  %b Financial access:
+  = @staff.financial_access
+
+= link_to 'Edit', edit_staff_path(@staff)
+\|
+= link_to 'Back', staffs_path
